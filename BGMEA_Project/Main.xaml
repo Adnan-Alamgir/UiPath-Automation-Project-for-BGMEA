@@ -1,0 +1,323 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1244,3357" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: New Tab" sap:VirtualizedContainerService.HintSize="649,3334" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="e8cf459b-f186-4410-95c0-6137d3e89635" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="615,3094" sap2010:WorkflowViewState.IdRef="Sequence_12">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Name="dt_detail" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="581,3032" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type into URL field in web browser" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="547,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="e8cf459b-f186-4410-95c0-6137d3e89635" Text="https://www.bgmea.com.bd/page/member-list[k(Enter)][k(Enter)][k(Enter)]" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="chrome://newtab/" CVScreenId="0b6fc1e3-bded-48d1-88ff-b06cd0576798" CvTextArea="646, 408, 204, 15" CvTextArgument="Search Google or type a URL" CvType="Text" DesignTimeRectangle="724, 506, 443, 46" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;ctrl name='New Tab' role='document' /&gt;&lt;ctrl name='Search Google or type a URL' role='combo box' /&gt;" FuzzySelectorArgument="&lt;ctrl name='New Tab' role='document' /&gt;&lt;ctrl name='Search Google or type a URL' role='combo box' automationid='' /&gt;" Guid="447ccecc-7bd8-4e05-a6af-53f321706fc6" InformativeScreenshot="34b7d654b1b31bd8971b274106129938.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='New Tab - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'General Member ListBGME…'" sap:VirtualizedContainerService.HintSize="547,225" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e8cf459b-f186-4410-95c0-6137d3e89635" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=https%3A%2F%2Fwww.bgmea.com.bd%2Fpage%2Fmember-list&amp;sca_esv=dd78f9e0c8abb7cb&amp;sxsrf=ADLYWILmcx3k1VTzNj5o1TQsXKFff18Udg%3A1730372184628&amp;source=hp&amp;ei=WGIjZ8vQI-Wp4-EPmvzMyAQ&amp;iflsig=AL9hbdgAAAAAZyNwaKgS7LBxTzI2tQvWiUtDha5WN1sE&amp;ved=0ahUKEwjL3JDburiJAxXl1DgGHRo-E0kQ4dUDCBY&amp;uact=5&amp;oq=https%3A%2F%2Fwww.bgmea.com.bd%2Fpage%2Fmember-list&amp;gs_lp=Egdnd3Mtd2l6IilodHRwczovL3d3dy5iZ21lYS5jb20uYmQvcGFnZS9tZW1iZXItbGlzdDIEECMYJ0gAUABYAHAAeACQAQCYAYoBoAGKAaoBAzAuMbgBA8gBAJgCAaACjAGYAwCSBwMwLjGgB_sD&amp;sclient=gws-wiz" DesignTimeRectangle="238, 292, 652, 94" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' parentid='rso' tag='DIV' class='' aaname='' check:innerText='General Member List&amp;#xA;BGMEA&amp;#xA;https://bgmea.com.bd › page › member-list&amp;#xA;You visit often' /&gt;" Guid="d15603f9-d0fc-4771-b6db-dd93377066d6" InformativeScreenshot="46ac4114a575da8d4cafad6e7d44a80f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='https://www.bgmea.com.bd/page/member-list - Google Search' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="48d1a32e-a1d8-4bfe-9507-4b33b69a8080" CvTextArea="277, 294, 53, 13" CvTextArgument="BGMEA" CvType="Text" DesignTimeRectangle="278, 292, 226, 18" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='VuuXrf' parentid='rso' tag='SPAN' type='' aaname='BGMEA' check:innerText='BGMEA' /&gt;" Guid="22f6d648-86bc-429a-8239-11ad6bbb365a" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_detail]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Member/Company Name' ReferenceIdx='0' Name='Company Name'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='BGMEA Reg No' ReferenceIdx='1' Name='Reg No'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Contact Person' ReferenceIdx='2' Name='Name'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Email Adddress' ReferenceIdx='3' Name='Email Adddress' IsDeleted='true'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Details' ReferenceIdx='4' Name='Details' IsDeleted='true'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Details Url' ReferenceIdx='5' Name='Details Url'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Member/Company Name' attr='fulltext' /&gt;&lt;column name='BGMEA Reg No' attr='fulltext' /&gt;&lt;column name='Contact Person' attr='fulltext' /&gt;&lt;column name='Email Adddress' attr='fulltext' /&gt;&lt;column name='Details' attr='fulltext' name2='Details Url' attr2='href' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="547,189" sap2010:WorkflowViewState.IdRef="NExtractData_3" InteractionMode="Simulate" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="e8cf459b-f186-4410-95c0-6137d3e89635" Version="V4">
+                <uix:NExtractData.NextLink>
+                  <uix:TargetAnchorable BrowserURL="https://bgmea.com.bd/page/member-list" CVScreenId="c008aa46-46d4-4250-8c84-484521d62f69" CvElementArea="1098, 740, 31, 39" CvTextArea="1111, 757, 6, 9" CvTextArgument="&gt;" CvType="Button" DesignTimeRectangle="1099, 618, 30, 38" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aria-label='Next »' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Next »' tag='A' type='' class='page-link' aaname='›' check:innerText='›' /&gt;" Guid="bdddf492-5682-4967-804c-49ec018de6b3" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='BGMEA | General Member List' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target DesignTimeRectangle="292, 618, 1336, 38" ElementType="List" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;nav&amp;gt;ul' tag='UL' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='UL' class='justify-content-center pagination' /&gt;" Guid="fae8f7d6-d3ae-4d45-9910-16df860861f3" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                    <uix:TargetAnchorable.PointOffset>
+                      <uix:PointOffset Position="TopLeft" X="16" Y="19" />
+                    </uix:TargetAnchorable.PointOffset>
+                  </uix:TargetAnchorable>
+                </uix:NExtractData.NextLink>
+                <uix:NExtractData.Target>
+                  <uix:TargetAnchorable BrowserURL="https://bgmea.com.bd/page/member-list" DesignTimeRectangle="292, 214, 1336, 868" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="90c8d7db-7285-4376-9dc1-862591b5957f" InformativeScreenshot="4d6886473e936802519aceb4b9c3c08a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='BGMEA | General Member List' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                </uix:NExtractData.Target>
+              </uix:NExtractData>
+              <Sequence DisplayName="Adding New Columns to DataTable" sap:VirtualizedContainerService.HintSize="547,741" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Address 1" DataTable="[dt_detail]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_1" />
+                <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Address 2" DataTable="[dt_detail]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_2" />
+                <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Mobile No" DataTable="[dt_detail]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="416,211" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_3" />
+              </Sequence>
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_detail]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="547,1363" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="513,1167" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:String" Name="address1" />
+                        <Variable x:TypeArguments="x:String" Name="address2" />
+                        <Variable x:TypeArguments="x:String" Name="phone" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="479,114" sap2010:WorkflowViewState.IdRef="NGoToUrl_2" Url="[CurrentRow(&quot;Details URL&quot;).ToString]" Version="V4" />
+                      <uix:NGetText DisplayName="Get Text 'Mobile No.'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="e8cf459b-f186-4410-95c0-6137d3e89635" TextString="[phone]" Version="V4">
+                        <uix:NGetText.Target>
+                          <uix:TargetAnchorable BrowserURL="https://www.bgmea.com.bd/member/5147" CVScreenId="975cfa26-c8e1-44c0-95be-353c55153387" CvTextArea="973, 698, 104, 14" CvType="AnyWordGroup" DesignTimeRectangle="970, 688, 207, 34" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='TD' /&gt;" Guid="f2be681c-cc3b-4664-b69a-4645531e20b0" InformativeScreenshot="6849786e9bec3a49456621bf339f40e5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='BGMEA | Member Details Acelon Knit Composite Ltd.' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="975cfa26-c8e1-44c0-95be-353c55153387" CvTextArea="974, 663, 79, 15" CvTextArgument="Mobile No." CvType="Text" DesignTimeRectangle="970, 654, 207, 34" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Mobile No.' type='' tag='TH' class='' check:innerText='Mobile No.' /&gt;" Guid="97838ffc-6ddb-41c9-9a1f-d3c8236b4c59" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NGetText.Target>
+                      </uix:NGetText>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Address Information'" sap:VirtualizedContainerService.HintSize="479,225" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e8cf459b-f186-4410-95c0-6137d3e89635" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://www.bgmea.com.bd/member/3" CVScreenId="0e934d03-5c54-416d-a8de-c63c04538e5b" CvElementArea="479, 542, 178, 45" CvTextArea="494, 557, 145, 15" CvTextArgument="Address Information" CvType="Button" DesignTimeRectangle="496, 555, 143, 19" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Address Information' tag='STRONG' type='' class='' check:innerText='Address Information' /&gt;" Guid="b9901f3a-cc4f-4d25-8e49-c0ae2e9968cd" InformativeScreenshot="b4bb5851b0e03bea4b3b28d5b76cc6ee.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='BGMEA | Member Details 3M Composite Ltd.' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                      </uix:NClick>
+                      <uix:NGetText DisplayName="Get Text 'Mailling Address'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="e8cf459b-f186-4410-95c0-6137d3e89635" TextString="[address1]" Version="V4">
+                        <uix:NGetText.Target>
+                          <uix:TargetAnchorable BrowserURL="https://www.bgmea.com.bd/member/3" DesignTimeRectangle="693, 748, 933, 83" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl parentid='address_info' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='' /&gt;" Guid="8310a392-074b-4ebb-81e8-c1215b08c287" InformativeScreenshot="4fc9eb595dc8ecb8e7424a8b195c42bb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='BGMEA | Member Details 3M Composite Ltd.' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="0e934d03-5c54-416d-a8de-c63c04538e5b" CvTextArea="297, 758, 117, 18" CvTextArgument="Mailling Address" CvType="Text" DesignTimeRectangle="293, 748, 400, 83" FuzzySelectorArgument="&lt;webctrl parentid='address_info' tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='' aaname='' check:innerText='Mailling Address' /&gt;" Guid="3d068f70-8f9b-40d6-9c22-7d44bccd1bee" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NGetText.Target>
+                      </uix:NGetText>
+                      <uix:NGetText DisplayName="Get Text 'Factory Address'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="e8cf459b-f186-4410-95c0-6137d3e89635" TextString="[address2]" Version="V4">
+                        <uix:NGetText.Target>
+                          <uix:TargetAnchorable BrowserURL="https://www.bgmea.com.bd/member/3" DesignTimeRectangle="693, 935, 933, 82" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl parentid='address_info' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='' /&gt;" Guid="4beb1168-453b-4f5a-94d1-acd24fd3266b" InformativeScreenshot="4cef0e073473613b6d1637643d63e9ea.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='BGMEA | Member Details 3M Composite Ltd.' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="0e934d03-5c54-416d-a8de-c63c04538e5b" CvTextArea="298, 944, 113, 18" CvTextArgument="Factory Address" CvType="Text" DesignTimeRectangle="293, 935, 400, 82" FuzzySelectorArgument="&lt;webctrl parentid='address_info' tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='' aaname='' check:innerText='Factory Address' /&gt;" Guid="5503dfa0-07a5-443f-9f8c-d409d5857d26" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NGetText.Target>
+                      </uix:NGetText>
+                      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,201" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                        <ui:MultipleAssign.AssignOperations>
+                          <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                              <ui:AssignOperation.To>
+                                <OutArgument x:TypeArguments="x:Object">[CurrentRow("Address 1")]</OutArgument>
+                              </ui:AssignOperation.To>
+                              <ui:AssignOperation.Value>
+                                <InArgument x:TypeArguments="x:Object">[address1]</InArgument>
+                              </ui:AssignOperation.Value>
+                            </ui:AssignOperation>
+                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                              <ui:AssignOperation.To>
+                                <OutArgument x:TypeArguments="x:Object">[CurrentRow("Address 2")]</OutArgument>
+                              </ui:AssignOperation.To>
+                              <ui:AssignOperation.Value>
+                                <InArgument x:TypeArguments="x:Object">[address2]</InArgument>
+                              </ui:AssignOperation.Value>
+                            </ui:AssignOperation>
+                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                              <ui:AssignOperation.To>
+                                <OutArgument x:TypeArguments="x:Object">[CurrentRow("Mobile No")]</OutArgument>
+                              </ui:AssignOperation.To>
+                              <ui:AssignOperation.Value>
+                                <InArgument x:TypeArguments="x:Object">[phone]</InArgument>
+                              </ui:AssignOperation.Value>
+                            </ui:AssignOperation>
+                          </scg:List>
+                        </ui:MultipleAssign.AssignOperations>
+                      </ui:MultipleAssign>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ForEachRow>
+              <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dt_detail]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="547,141" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="bgmea_data.xlsx" />
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="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" sap2010:WorkflowViewState.IdRef="TargetApp_1" InformativeScreenshot="d45ca55c22fffd9c1497effeeee39ded.png" Selector="&lt;html app='chrome.exe' url='www.google.com' /&gt;" Title="New Tab" Url="www.google.com" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
